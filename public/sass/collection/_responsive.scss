@@ -1,0 +1,42 @@
+@media(max-width:1200px){
+
+}
+
+@media(max-width:992px){
+    .navigation-bar{
+        display: none;
+    }
+
+    .navigation-bar-mobile{
+        display: block;
+    }
+}
+
+@media(max-width:768px){
+    
+}
+
+@media(max-width:500px){
+    
+}
+
+@media(max-width:767px){
+    .home-mobile{
+        display: grid;
+        grid-template-columns: auto;
+        width: 100%;
+        margin:0;
+        grid-template-areas: 
+        'picture '
+        'intro';
+
+            .intro{
+                grid-area:intro;
+
+            }
+
+            .aniq-image{
+                grid-area:picture;
+            }
+    }
+}

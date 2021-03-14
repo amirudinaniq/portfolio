@@ -1,0 +1,31 @@
+//import bootstrap css from node module
+// @import "../../node_modules/bootstrap/scss/bootstrap.scss";
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+@import '../../node_modules/bootstrap-vue/src/index.scss';
+
+// @import '../../node_modules/linearicons/dist/dekstop-font/demo-files/demo.css';
+
+
+//import font style
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+
+//import custom css
+@import 'collection/variables';
+@import 'collection/main';
+@import 'collection/header';
+@import 'collection/home';
+@import 'collection/projects';
+@import 'collection/skills';
+@import 'collection/contact';
+@import 'collection/custom';
+@import 'collection/responsive';
+
+
+
+
+
+
+
+

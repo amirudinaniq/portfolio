@@ -1,0 +1,90 @@
+
+.bg-primary{
+    background:$bg-primary !important;
+}
+
+.text-primary{
+    color:$text-primary !important;
+}
+
+
+.button-wrapper{
+    position: relative;
+    width: fit-content;
+
+        
+    .button-primary{
+        background: $bg-primary;
+        border-radius:$rounded-box;
+        padding-left:2rem;
+        padding-right:2rem;
+        color:#fff;
+        // position: relative;
+        z-index: 2;
+        outline-color: red !important;
+
+        &:hover , &:hover ~ .button-blur-bg {
+            color:$text-primary;
+            background: #fff;
+            transition:$transition;
+        }
+    }
+
+    .button-blur-bg{
+        display: none;
+        width: 100px;
+        height: 50px;
+        background-color: $bg-primary;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        border-radius: 50%;
+        transform: translate(-50%,-50%);
+        filter: blur(5px);
+        z-index: -1;
+        opacity: 0.7;
+
+        
+    }
+}
+
+.svg-inline--fa{
+    font-size: 1.7rem;
+}
+
+.title , .hello-aniq, .hello-aniq span{
+    font-family: $fredoka-one;
+    margin-bottom: -5px;
+    font-size:4rem;
+
+    @media(max-width:768px){
+        font-size: 3rem;
+    }
+}
+
+.title {
+    font-size: 2.5rem;
+    text-align: center;
+
+    @media(max-width:768px){
+        font-size: 2rem;
+    }
+}
+
+.glass-body{
+    border-radius: 15px;
+    background: linear-gradient(
+        to right top, 
+        rgba(255,255,255,0.1),
+        rgba(255,255,255,0.2)
+        );
+     backdrop-filter:blur(2rem);
+     box-shadow: 0px 7px 20px -5px;
+}
+.w-60{
+    width:60% !important;
+}
+
+.w-70{
+    width:70% !important;
+}

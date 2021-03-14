@@ -1,0 +1,175 @@
+.skills-section{
+    // padding:10rem 0 4rem;
+    padding-top:2rem;
+
+    li{
+        display: list-item;
+    }
+    
+        .content-wrapper{
+            .work-icon{
+                width: 17px;
+                margin-bottom: -4px;
+            }
+
+            .header-icon{
+                margin-top: 4px;
+                margin-right: 10px;
+            }
+
+
+            hr{
+            }
+    
+            .content-header{
+                margin-bottom: -15px;
+                margin-left: 15px;
+    
+    
+                .title-icon{
+                    font-size: 2rem !important;
+                    margin-top: 2px !important;
+                    color:$primary-color;
+                    margin-right: 10px;
+                }
+        
+                h2{
+                    font-style: italic;
+                }
+        
+                h5{
+                    margin-left:10px;
+                }
+         
+            }
+        
+            .content-body{
+                border-radius: 15px;
+                background: linear-gradient(
+                    to right top, 
+                    rgba(255,255,255,0.1),
+                    rgba(255,255,255,0.2)
+                    );
+                 backdrop-filter:blur(2rem);
+                 box-shadow: 0px 7px 20px -5px;
+
+                
+
+                .education{
+                    // background: #f7f7f7;
+                    padding:1rem;
+                    border-radius: 15px;
+                    margin-bottom: 10px;
+
+                  
+    
+                    .education-inner{
+                        // background: #fff;
+                        padding: 10px;
+                        border-radius: 15px;
+                        margin-bottom: 1rem;
+                        display: flex;
+    
+                        ul{
+
+                            padding-left: 30px;
+                            li{
+                                list-style: circle;
+                            }
+                        }
+
+                        .organization-logo{
+                            width: 100px;
+                            margin-left: auto;
+                            display: flex;
+                            border-radius: 50%;
+                        }
+    
+                        &:last-child{
+                            margin-bottom: 0;
+                        }
+                    }
+        
+                    .period,.institute-name{
+                        font-weight: bold;
+                    }
+
+                    ul{
+                        margin:0;
+
+                        li{
+                             list-style: none ;
+                        }
+                    }
+                }
+            }
+        }
+    
+        
+    }
+    
+    
+    .hobby-wrapper{
+        padding: 10px;
+        border-radius: 50%;
+        background: grey;
+        // background: $primary-color;
+        margin: 0 auto;
+        width: fit-content;
+        margin-bottom: 10px;
+    
+        .hobby-icon{
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+        }
+    }
+
+    .skills-section .skill-icon {
+        width: 30px;
+        height: 30px;
+        margin-bottom: 5px;
+        margin-right: 5px;
+        border-radius: 50%;
+    }
+
+    .contact-bg{
+        // background-image:url('https://www.jeffkram.com/wp-content/uploads/2019/02/my-skills-png-6.png');
+        background-color: purple;
+    }
+    
+    .my-skills{
+        padding:6rem 0 10rem;
+    }
+    
+        .my-creative-skills{
+            padding: 0 5rem;
+        }
+    
+        .skill-name{
+            width: 100%
+        }
+    
+        .skill-name span:nth-child(3){
+            float:right;
+        }
+    
+        .skill-level{
+            width: 100%;
+            height: 7px;
+            background: lightgray;
+            border-radius: 20px;
+            margin-bottom: 15px;
+        }
+    
+        .skill-level-bar{
+            height: 7px;
+            border-radius: 20px;
+            // background-color: $primary-color;
+        }
+    
+    
+    
+    
+    
+    

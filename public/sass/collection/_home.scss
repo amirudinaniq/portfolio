@@ -1,0 +1,40 @@
+.my-img{
+    // padding:0 2rem;
+    width: 80%;
+    margin:0 auto;
+    img{
+        // width:100%
+        // height: 30rem;
+    }
+
+    @media(max-width: 1024px){
+       width: 100%;
+       padding:0.5rem;
+    }
+
+    @media(max-width: 768px){
+        width: 70%;
+     }
+
+     @media(max-width: 650px){
+        width: 100%;
+     }
+}
+
+.developer{
+   font-size: 1.4rem;
+
+   @media(max-width:420px){
+    font-size: 1.3rem;
+    }
+}
+
+
+
+.description{
+    width:430px; 
+
+    @media(max-width:992px){
+        width: 100%;
+    }
+}
