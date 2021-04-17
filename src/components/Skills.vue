@@ -12,7 +12,7 @@
                             <h2>Education Background</h2>
                         </div>
                   </div>
-                  <hr class="w-60 ml-0 bg-white">
+                  <hr class=" ml-0 bg-white">
                   <div class="content-body">
                       <div class="education">
                         <div v-for="(education,index) in educations" :key="'index'+index">
@@ -49,7 +49,7 @@
                             <h2>Work Experience</h2>
                         </div>
                   </div>
-                  <hr class="w-60 ml-0 bg-white">
+                  <hr class=" ml-0 bg-white">
                   <div class="content-body">
                       <div class="education">
                         <div v-for="(work,index) in works" :key="'index'+index">
@@ -89,7 +89,7 @@
                           <h2>Software Skills</h2>
                       </div>
                 </div>
-                <hr class="w-60 ml-0 bg-white">
+                <hr class=" ml-0 bg-white">
                 <div class="content-body">
                     <div class="education">
                       <div class="">
@@ -116,7 +116,7 @@
                           <h2>Programming Skills</h2>
                       </div>
                 </div>
-                <hr class="w-60 ml-0 bg-white">
+                <hr class=" ml-0 bg-white">
                 <div class="content-body">
                   <div class="education">
                     <div class="">
@@ -146,7 +146,7 @@
                         <h2>Hobbies and Interests</h2>
                     </div>
               </div>
-              <hr class="w-60 ml-0 bg-white">
+              <hr class=" ml-0 bg-white">
               <div class="content-body">
                   <div class="education">
                     <div class="row justify-content-center">
