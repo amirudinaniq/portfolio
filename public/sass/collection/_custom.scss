@@ -18,15 +18,18 @@
         border-radius:$rounded-box;
         padding-left:2rem;
         padding-right:2rem;
+        border:2px solid $primary-color;
         color:#fff;
         // position: relative;
         z-index: 2;
         outline-color: red !important;
 
+        transition: background $transition ease-in-out;
+
         &:hover , &:hover ~ .button-blur-bg {
             color:$text-primary;
-            background: #fff;
-            transition:$transition;
+            background: transparent;
+            // transition:$transition;
         }
     }
 

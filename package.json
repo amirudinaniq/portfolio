@@ -17,6 +17,7 @@
     "linearicons": "^1.0.2",
     "vue": "^2.6.12",
     "vue-carousel": "^0.18.0",
+    "vue-router": "^3.5.1",
     "vue-slide-up-down": "^2.0.1"
   },
   "devDependencies": {
@@ -42,7 +43,11 @@
     "parserOptions": {
       "parser": "babel-eslint"
     },
-    "rules": {}
+    "rules": {
+      "vue/no-unused-components": ["error", {
+        "ignoreWhenBindingPresent": true
+      }]
+    }
   },
   "browserslist": [
     "> 1%",

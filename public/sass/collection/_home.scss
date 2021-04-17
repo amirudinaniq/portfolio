@@ -1,3 +1,85 @@
+.home-outter{
+    width: 94%;
+    margin: 0 auto;
+    .home-container{
+        // border:1px solid pink;
+        // padding:2rem;
+        background: #e1f0ff;
+        border-radius: $rounded-box;
+        position: relative;
+        overflow:hidden;
+        
+    
+        .home-mobile{
+            position:relative;
+            padding: 2rem;
+            
+            .intro,.aniq-image{
+                z-index: 999;
+            }
+
+            @media(max-width:420px){
+                padding:0;
+            }
+        }
+    
+        .circle1,.circle2,.circle3,.circle4{
+       
+            background: linear-gradient(
+                to right bottom, 
+                rgba(255,255,255,0.8),
+                rgba(184, 149, 149, 0.3)
+                );
+                height:13rem;
+                width: 13rem;
+                position: absolute;
+                border-radius: 50%;
+                z-index: 2;
+                // display:none;
+        }
+        
+        .circle2{
+            left: 50%;
+            top: -8rem;
+            transform: translateX(-50%);
+            // background: purple;
+            background: linear-gradient(to right top, #ff00bc, #ffef29);
+        
+            filter:blur($blur);
+        
+        }
+        
+        .circle1{
+            top: 50%;
+            left: revert;
+            transform: translateY(-50%);
+            right: 0;
+            background:linear-gradient(to right top, #e3ff8c, #007eff);
+            filter:blur($blur);
+        }
+        
+        .circle3{
+            top: -3rem;
+            left: -3rem;
+            background: linear-gradient(to right top, #ffffff, #ff3434);
+            filter: blur($blur);
+            // width: 32rem;
+        }
+    
+        .circle4{
+            left: 35%;
+            bottom: -8rem;
+            transform: translateX(-50%);
+            background: linear-gradient(to right top, #4fff6d, #afe93e);
+            filter: blur($blur);
+            // width: 32rem;
+        }
+    
+    }
+}
+
+
+
 .my-img{
     // padding:0 2rem;
     width: 80%;

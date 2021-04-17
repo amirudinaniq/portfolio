@@ -1,30 +1,28 @@
 <template>
   <div id="app">
-
-
-    <MainPage></MainPage>
+    <router-view></router-view>
+    <!-- <MainPage></MainPage> -->
   </div>
 </template>
 
 <script>
-import MainPage from './components/mainpage.vue'
+// import MainPage from './components/mainpage.vue'
 import '../public/sass/base.scss'
 
 export default {
-  name: 'App',
+  name: 'app',
   components: {
-    MainPage
+    // MainPage
   }
 }
 </script>
 
 <style>
-#app {
-  /* font-family: Avenir, Helvetica, Arial, sans-serif;
+/* #app { 
+   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px; */
-}
+  margin-top: 60px;  } */
 </style>

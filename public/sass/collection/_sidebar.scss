@@ -1,0 +1,38 @@
+.menu-sidebar{
+    height: 100%;
+    background: #fff;
+    position: fixed;
+    top: 61px;
+    left: 0;
+    z-index: 998;
+    transition:$transition;
+    overflow: hidden;
+
+        .sidebar-inner{
+            padding:10px;
+            margin-top: 10px;
+
+                .sidebar-item{
+                    // background: $primary-color;
+                    margin-left: -15px;
+                    border-top-right-radius: 40px;
+                    border-bottom-right-radius: 40px;
+                    width: 80%;
+                    // color:#fff;
+                    padding:10px;
+
+                    svg{
+                        font-size: 20px;
+                    }
+
+                    label{
+                        margin:0;
+                        a{
+                            color:inherit !important;
+                        }
+                    }
+                    
+                        
+                }
+        }
+}

@@ -1,19 +1,21 @@
 <template>
   <div>
     <main>
-        <section class="glass">
-          <Header></Header>
-          <Home></Home>
-          <Projects></Projects>
-          <Skills></Skills>
+      <Header :isActive="isActive" @changeIsActive="change"></Header>
+      <Sidebar :isActive="isActive"></Sidebar>
+      <div class="container">
+          <section class="glass">
+            <Home></Home>
+            <Projects></Projects>
+            <Skills></Skills>
+          </section>
+        </div>      
           <Contact></Contact>
 
-        
-        </section>
     </main>
-    <div class="circle1"></div>
+    <!-- <div class="circle1"></div>
     <div class="circle2"></div>
-    <div class="circle3"></div>
+    <div class="circle3"></div> -->
   </div>
 </template>
 
@@ -24,6 +26,8 @@ import Home from "./home.vue"
 import Projects from "./projects.vue"
 import Skills from './Skills.vue'
 import Contact from './contact.vue'
+import Sidebar from './sidebar.vue'
+
 
 
 
@@ -36,10 +40,17 @@ export default {
     Home,
     Projects,
     Skills,
-    Contact
+    Contact,
+    Sidebar
   },
   data() {
     return{
+      isActive : false,
+    }
+  },
+  methods: {
+    change(value){
+      this.isActive = value
     }
   }
 }

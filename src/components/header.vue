@@ -1,59 +1,66 @@
 <template>
-  <div>
       <header>
-        <nav class="navigation-bar">
-            <ul class="navbar-custom">
-                <div class="logo-name">
-                  <a href="#"  class="bg-white p-3">Aniq's <span class="text-primary">Portfolio.</span></a>
-                </div>
-                <div class="d-flex ml-auto">
-                  <li v-for="(page,index) in pageName" :key="index"><a :href=" '#' + page.name" :ref="page.ref">{{page.name}}<div class="underlined" ></div></a></li>
-                  <li><div class="button-wrapper">
-                          <a href="#Contact"><button type="button" class="btn button-primary">Contact Me </button></a>
-                          <div class="button-blur-bg"></div>
-                      </div>
-                  </li>
-                </div>
-                <!-- <li><a href="" ref="aboutme">About me<div class="underlined"></div></a></li> -->
-                <!-- <li><a href="" ref="projects">Projects<div class="underlined"></div></a></li> -->
-                <!-- <li><a href="" ref="skills">Skills and Experiences<div class="underlined"></div></a> </li> -->
-                <!-- <li><a href="" ref="contactme">Contact Me<div class="underlined"></div></a></li> -->
-            </ul>
-        </nav>
+        <div class="container">
+          <nav class="navigation-bar">
+              <ul class="navbar-custom">
+                  <div class="logo-name">
+                    <a href="#"  class="bg-white p-3">Port<span class="text-primary">folio.</span></a>
+                  </div>
+                  <div class="d-flex ml-auto">
+                    <li v-for="(page,index) in pageName" :key="index"><a :href=" '#' + page.name" :ref="page.ref">{{page.name}}<div class="underlined" ></div></a></li>
+                    <li><div class="button-wrapper">
+                            <a href="#Contact"><button type="button" class="btn button-primary">Contact Me </button></a>
+                            <div class="button-blur-bg"></div>
+                        </div>
+                    </li>
+                  </div>
+                  <!-- <li><a href="" ref="aboutme">About me<div class="underlined"></div></a></li> -->
+                  <!-- <li><a href="" ref="projects">Projects<div class="underlined"></div></a></li> -->
+                  <!-- <li><a href="" ref="skills">Skills and Experiences<div class="underlined"></div></a> </li> -->
+                  <!-- <li><a href="" ref="contactme">Contact Me<div class="underlined"></div></a></li> -->
+              </ul>
+          </nav>
+        </div>
+       
 
         <nav class="navigation-bar-mobile">
-          <div class="p-3 w-100" style="margin-right:-3rem !important;">
+          <div class="w-100" style="margin-right:-3rem !important;padding: 0.5rem 1rem !important;">
             <b-row>
               <b-col cols="3">
                 <!-- <div class="d-flex align-items-center"> -->
-                  <FontAwesomeIcon icon="bars"></FontAwesomeIcon>
+                  <!-- <FontAwesomeIcon icon="bars"></FontAwesomeIcon> -->
                 <!-- </div> -->
+               <button type="button" class="hamburger close-sidebar-btn hamburger--elastic" :class=" isActive2 ? 'is-active' : ''" @click="change">
+                  <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                  </span>
+                </button>
               </b-col>
               <b-col cols="9">
                  <div class="logo-name">
-                  <a href="#"  class="bg-white p-3">Aniq's <span class="text-primary">Portfolio.</span></a>
+                  <a href="#"  class="bg-white p-3">Port<span class="text-primary">folio.</span></a>
                 </div>
               </b-col>
             </b-row>
           </div>
         </nav>
       </header>
-  </div>
 </template>
 
 <script>
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+// import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 library.add(faBars)
 
 export default {
   name: 'Header',
   components:{
-    FontAwesomeIcon
+    // FontAwesomeIcon
   },
+  props: ["isActive"],
   data() {
     return{
       pageName:[
@@ -72,10 +79,15 @@ export default {
         //  {
         //   name: 'Contact Me',
         // },
-      ],  
+      ], 
+      isActive2 : this.isActive,
     }
   },
   methods:{
+    change(){
+      this.isActive2=!this.isActive2
+      this.$emit('changeIsActive' , this.isActive2 );
+    }
   },
   mounted(){
     // console.log(this.$refs.aboutme.clientWidth)
